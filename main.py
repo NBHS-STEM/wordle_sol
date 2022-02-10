@@ -1,4 +1,4 @@
-import random
+git stimport random
 
 class WordLengthError(Exception):
 	pass
