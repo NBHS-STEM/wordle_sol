@@ -24,12 +24,11 @@ while not game_over:
 				raise WordLengthError
 			elif guess not in WORDS:
 				raise WordNotFoundError
+			break
 		except WordLengthError:
 			print("Guesses must be 5 letters long.\n")
 		except WordNotFoundError:
 			print("That guess isn't in our dictionary.\n")
-		else:
-			break
 
 	for a, b in zip(secret, guess):
 		# TODO: manage guesses with repeat letters
